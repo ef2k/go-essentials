@@ -2,6 +2,10 @@
 
 The web app starter pack for Go. Development environment included.
 
+## How to use this repo
+
+The easiest way to get started is to clone this repo, use it as a starting point, and make it your own.
+
 ## What you get in the containers
 
 * Go (1.8)
