@@ -1,6 +1,6 @@
 # go-essentials
 
-[<img src="go-essentials.gif" style="display:block; margin:auto;">](https://vimeo.com/205093782)
+[<img src="go-essentials.gif" style="display:block; margin:auto;">](https://player.vimeo.com/video/205093782)
 
 This is a containerized development environment for Go. It's best suited for those wanting to get up and running quickly. You should have a basic understanding of Docker and Go to make it your own.
 
