@@ -1,0 +1,11 @@
+{
+	"version": 0,
+	"dependencies": [
+		{
+			"importpath": "github.com/lib/pq",
+			"repository": "https://github.com/lib/pq",
+			"revision": "ba5d4f7a35561e22fbdf7a39aa0070f4d460cfc0",
+			"branch": "master"
+		}
+	]
+}

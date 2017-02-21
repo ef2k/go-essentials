@@ -1,0 +1,41 @@
+version: '2.1'
+
+services:
+  dev:
+    build:
+      context: ./config/dockerfiles
+      dockerfile: Dockerfile-dev
+    volumes:
+      - .:/go/src/app
+    ports:
+      - "8000:8000"
+    depends_on:
+      db:
+        condition: service_healthy
+    links:
+      - db
+  test:
+    build:
+      context: ./config/dockerfiles
+      dockerfile: Dockerfile-test
+    logging:
+      driver: none
+    ports:
+      - "8001:8080"
+    volumes:
+      - .:/go/src/app
+    depends_on:
+      - dev
+  db:
+    image: postgres:alpine
+    ports:
+      - "5432:5432"
+    volumes:
+      - ./tmp/data:/var/lib/postgresql/data
+    env_file: ./config/environments/development
+    environment:
+      - POSTGRES_USER=${DB_USER}
+      - POSTGRES_PASSWORD=${DB_PASS}
+      - POSTGRES_DB=${APP_NAME}
+    healthcheck:
+      test: "exit 0"

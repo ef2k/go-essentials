@@ -1,0 +1,16 @@
+# Application
+export APP_NAME=project
+
+# Database
+export DB_USER=app
+export DB_PASSWORD=
+export DB_HOST=db
+export DB_PORT=5432
+export DB_NAME=$APP_NAME
+export DB_MODE=disable
+
+# Postgres
+export POSTGRES_USER=$DB_USER
+export POSTGRES_PASSWORD=$DB_PASSWORD
+export POSTGRES_DB=$APP_NAME
+
