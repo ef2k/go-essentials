@@ -44,15 +44,15 @@ eventually need it to vendor your dependencies:
 Assuming you have **Docker**, **Go**, and **GB** installed on your machine, all you need to do is:
 
 ```
-$ make start
+$ ./start.sh
 ```
 
-This will load up environment variables found in `config/environments/development` and will then `docker-compose up`. Leave the terminal open and you'll be able to see all log info.
+This will load up environment variables found in `config/environments/dev` and will then `docker-compose up`. Leave the terminal open and you'll be able to see all log info.
 
 The app runs at http://localhost:8000 and the test runner on http://localhost:8001.
 
+> Tip: Learn all of the other docker-compose commands for greater control.
 
-> Tip: Take a closer look at the Makefile for other build and cleanup commands.
 
 ## Special thanks
 
