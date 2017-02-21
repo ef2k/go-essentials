@@ -49,7 +49,7 @@ $ ./start.sh
 
 This will load up environment variables found in `config/environments/dev` and will then `docker-compose up`. Leave the terminal open and you'll be able to see all log info.
 
-The app runs at http://localhost:8000 and the test runner on http://localhost:8001.
+The app runs at **http://localhost:8000** and the test runner on **http://localhost:8001**.
 
 > Tip: Learn all of the other docker-compose commands for greater control.
 
