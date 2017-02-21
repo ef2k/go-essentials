@@ -5,7 +5,6 @@ The web app starter pack for Go. Development environment included.
 ## What you get in the containers
 
 * Go (1.8)
-* Profiling
 * Automatic code reloads
 * Automatic test running
 * Vendored dependency management
@@ -36,17 +35,27 @@ eventually need it to vendor your dependencies:
 
 > Tip: One of the easiest ways to install Go is via GVM (https://github.com/moovweb/gvm).
 
-
 ## How to get started
 
 Assuming you have **Docker**, **Go**, and **GB** installed on your machine, all you need to do is:
 
 ```
-$ docker-compose up
+$ make start
 ```
+
+This will load up environment variables found in `config/environments/development` and will then `docker-compose up`. Leave the terminal open and you'll be able to see all log info.
+
+The app runs at http://localhost:8000 and the test runner on http://localhost:8001.
+
+
+> Tip: Take a closer look at the Makefile for other build and cleanup commands.
 
 ## Special thanks
 
-* GB
-* Reflex
-* GoConvey
+* GB (https://getgb.io)
+* Reflex (https://github.com/cespare/reflex)
+* GoConvey (https://goconvey.co)
+
+## License
+
+Released under the MIT license.
